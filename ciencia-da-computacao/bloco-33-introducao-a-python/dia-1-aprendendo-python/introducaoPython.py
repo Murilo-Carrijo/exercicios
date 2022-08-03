@@ -9,3 +9,14 @@ def higherNumber(x, y):
 
 higherNumber(2, 3)
 
+# 🚀 Exercício 2: Calcule a média aritmética dos valores contidos em uma lista.
+
+def average(listNumbers):
+    sum = 0
+    for number in listNumbers:
+        sum += number
+    return sum / len(listNumbers)
+
+ 
+numbers = [10, 20, 30]
+average(numbers)
