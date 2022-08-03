@@ -53,3 +53,21 @@ def calcBuyPaint(mSquare):
 
 
 calcBuyPaint(50)
+
+# Exercício 6: Crie uma função que receba os três lado de um triângulo e informe qual o tipo de triângulo formado ou "não é triangulo", caso não seja possível formar um triângulo.
+
+def checkingTriangle(s1, s2, s3):
+    check1 = s1 + s2
+    check2 = s1 + s3
+    check3 = s2 + s3
+    if check1 > s3 and check2 > s2 and check3 > s1:
+        if s1 == s2 == s3:
+            print("Triângulo Equilátero")
+        elif s1 == s2 or s1 == s3 or s2 == s3:
+            print("Triângulo Isósceles")
+        else:
+            print("Triângulo Escaleno")
+    else:
+        print("Não é um triângulo")
+
+checkingTriangle(10, 4, 2)
