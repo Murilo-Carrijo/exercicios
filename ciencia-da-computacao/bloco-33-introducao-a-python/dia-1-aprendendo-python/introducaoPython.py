@@ -1,5 +1,5 @@
+from math import ceil
 # 🚀 Exercício 1: Crie uma função que receba dois números e retorne o maior deles.
-
 
 def higherNumber(x, y):
     if x > y:
@@ -42,3 +42,14 @@ def biggestName(names):
 
 names = ["José", "Lucas", "Nádia", "Fernanda", "Cairo", "Joana"]
 biggestName(names)
+
+# Exercício 5: Considere que a cobertura da tinta é de 1 litro para cada 3 metros quadrados e que a tinta é vendida em latas de 18 litros, que custam R$ 80,00. Crie uma função que retorne dois valores em uma tupla contendo a quantidade de latas de tinta a serem compradas e o preço total a partir do tamanho de uma parede(em m²).
+
+def calcBuyPaint(mSquare):
+    qtyCans = ceil(mSquare / 3)
+    totalPrice = qtyCans * 80
+    print(f'Quantidade: {qtyCans}', f'Valor: {totalPrice}')
+    return f'Quantidade: {qtyCans}', f'Valor: {totalPrice}'
+
+
+calcBuyPaint(50)
