@@ -14,3 +14,11 @@ class Estatistica():
 
     def moda(dados):
         return sts.mode(dados)
+
+
+
+dados = [3, 2, 10, 9, 10, 11]
+if __name__ == "__main__":
+    print("média: ", Estatistica.media(dados))
+    print("mediana: ", Estatistica.mediana(dados))
+    print("moda: ", Estatistica.moda(dados))
